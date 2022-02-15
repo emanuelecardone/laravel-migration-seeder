@@ -15,9 +15,9 @@ class CreateVoyagesTable extends Migration
     {
         Schema::create('voyages', function (Blueprint $table) {
             $table->id();
-            $table->string('city');
+            $table->string('city', 20);
             $table->date('date')->unique();
-            $table->string('duration');
+            $table->string('duration', 20);
             $table->rememberToken();    
             $table->timestamps();
         });
