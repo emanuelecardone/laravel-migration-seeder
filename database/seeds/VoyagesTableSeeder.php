@@ -18,7 +18,7 @@ class VoyagesTableSeeder extends Seeder
             $new_voyage = new Voyage();
             $new_voyage->city = $faker->city();
             $new_voyage->date = $faker->date();
-            $new_voyage->duration = rand(1, 7);
+            $new_voyage->duration = rand(1, 7) . ' days';
             $new_voyage->save();
         }
     }
